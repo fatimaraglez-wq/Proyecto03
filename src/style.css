@@ -1,0 +1,207 @@
+
+:root {
+  /* Colores principales */
+  --morado: #a78bfa;
+  --morado-oscuro: #7c3aed;
+  --morado-claro: #ede9fe;
+
+  --rosa: #f9a8d4;
+  --rosa-oscuro: #db77ad;
+  --rosa-claro: #fce7f3;
+
+  --azul: #93c5fd;
+  --azul-oscuro: #3b82f6;
+  --azul-claro: #dbeafe;
+
+  --amarillo: #fff4bd;
+
+  --fondo: #faf8ff;
+  --texto: #43345e;
+  --blanco: #ffffff;
+}
+
+/* Fondo general*/
+body {
+  background: linear-gradient(135deg, #fce7f3, #ede9fe, #e0d7ff);
+  color: var(--texto);
+}
+
+/* Botones */
+.btn-morado {
+  background-color: var(--morado);
+  border-color: var(--morado);
+  color: #fff;
+  transition: all .2s ease;
+}
+
+.btn-morado:hover,
+.btn-morado:focus {
+  background-color: var(--morado-oscuro);
+  border-color: var(--morado-oscuro);
+  color: #fff;
+}
+
+.btn-outline-morado {
+  border-color: var(--morado);
+  color: var(--morado-oscuro);
+}
+
+.btn-outline-morado:hover {
+  background-color: var(--morado);
+  color: #fff;
+}
+
+/* Botones adicionales */
+.btn-rosa {
+  background-color: var(--rosa);
+  border-color: var(--rosa);
+  color: #63334f;
+}
+
+.btn-rosa:hover {
+  background-color: var(--rosa-oscuro);
+  border-color: var(--rosa-oscuro);
+  color: #fff;
+}
+
+.btn-azul {
+  background-color: var(--azul);
+  border-color: var(--azul);
+  color: #24466e;
+}
+
+.btn-azul:hover {
+  background-color: var(--azul-oscuro);
+  border-color: var(--azul-oscuro);
+  color: #fff;
+}
+
+/* Enlaces */
+a {
+  color: var(--morado-oscuro);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--rosa-oscuro);
+}
+
+/* Navbar */
+.navbar-morado {
+  background: linear-gradient(90deg, #a78bfa, #c4b5fd);
+}
+
+.navbar-morado .nav-link {
+  color: #fff;
+  transition: color .2s ease;
+}
+
+.navbar-morado .nav-link:hover,
+.navbar-morado .nav-link.active {
+  color: #fce7f3;
+}
+
+/* Tarjetas */
+.tarjeta {
+  background: var(--blanco);
+  border: 1px solid var(--morado-claro);
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(167, 139, 250, .12);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.tarjeta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(167, 139, 250, .18);
+}
+
+/* Formularios */
+.form-control,
+.form-select {
+  border-radius: 10px;
+  border-color: #e9dffb;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--morado);
+  box-shadow: 0 0 0 .2rem rgba(167, 139, 250, .2);
+}
+
+/* Iconos circulares */
+.icono-circulo {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--morado-claro);
+  color: var(--morado-oscuro);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+}
+
+/* Hero de inicio */
+.hero {
+  background: linear-gradient(135deg, #a78bfa, #f9a8d4, #93c5fd);
+  color: #fff;
+  border-radius: 20px;
+}
+
+/* Personajes */
+.personaje-card {
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.personaje-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(167, 139, 250, .2);
+}
+
+.personaje-card img {
+  border-radius: 14px 14px 0 0;
+}
+
+/* Etiquetas */
+.badge-morado {
+  background-color: var(--morado-claro);
+  color: var(--morado-oscuro);
+}
+
+.badge-rosa {
+  background-color: var(--rosa-claro);
+  color: #a33e78;
+}
+
+.badge-azul {
+  background-color: var(--azul-claro);
+  color: #2563a6;
+}
+
+/* Pantalla de error */
+.error-codigo {
+  font-size: 6rem;
+  font-weight: 800;
+  color: var(--morado);
+  line-height: 1;
+}
+
+/* Títulos */
+h1, h2, h3, h4 {
+  color: #654b91;
+}
+
+/* Tablas */
+.table thead {
+  background-color: var(--morado-claro);
+  color: var(--morado-oscuro);
+}
+
+.table {
+  border-radius: 12px;
+  overflow: hidden;
+}
